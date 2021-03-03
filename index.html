@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>Crud Estático</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Nome Completo:</label><label class="validation-error hide" id="nomeValidationError">Este campo é requerido!</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div>
+                            <label>Cargo:</label>
+                            <input type="text" name="cargo" id="cargo">
+                        </div>
+                        <div>
+                            <label>Salário:</label>
+                            <input type="text" name="salario" id="salario">
+                        </div>
+                        <div>
+                            <label>Cidade:</label>
+                            <input type="text" name="cidade" id="cidade">
+                        </div> 
+                        <div class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>                        
+                    </form>
+                </td>
+                <td>
+                    <table class="lista" id="colabLista">
+                        <thead>
+                            <tr>
+                                <th>Nome Completo:</th>
+                                <th>Cargo:</th>
+                                <th>Salário:</th>
+                                <th>Cidade:</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+</html>
